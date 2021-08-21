@@ -1,0 +1,7 @@
+/**
+ * Copyright 2021 Franklin Siqueira.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+ :global(.vtex-sticky-layout-0-x-container--sticky-header) {
+  background: #212121;
+}

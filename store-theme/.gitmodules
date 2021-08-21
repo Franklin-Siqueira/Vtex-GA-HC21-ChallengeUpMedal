@@ -1,0 +1,3 @@
+[submodule "store-theme"]
+	path = store-theme
+	url = https://github.com/Franklin-Siqueira/VTex-GA-HC21-UpMedal.git

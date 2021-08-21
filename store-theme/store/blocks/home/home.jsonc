@@ -1,0 +1,112 @@
+{
+  "store.home": {
+    "blocks": [
+      /* You can make references to blocks defined in other files.
+      What happened? 19:18h/08-20...
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "flex-layout.row#deals",
+      "list-context.image-list#demo",
+      "rich-text#question",
+      // "__fold__.experimentalLazyAssets",
+      // "rich-text#shelf-title",
+      "flex-layout.row#shelf"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 820,
+      "preload": true
+      // "images": [
+      //   {
+      //     "image": "/assets/banner/BANNER-WOOD.png",
+      //     "mobileImage": "/assets/banner/BANNER-WOOD.jpg"
+      //   },
+      //   {
+      //     "image": "/assets/banner/grandesGuerreiros.png",
+      //     "mobileImage": "/assets/banner/grandesGuerreiros.png"
+      //   }
+      // ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "images": [
+        {
+          "image": "/assets/banner/BANNER-WOOD.png",
+          "mobileImage": "/assets/banner/BANNER-WOOD.jpg"
+        },
+        {
+          "image": "/assets/banner/grandesGuerreiros.png",
+          "mobileImage": "/assets/banner/grandesGuerreiros.png"
+        }
+      ]
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "você está vendo provas de ",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}
