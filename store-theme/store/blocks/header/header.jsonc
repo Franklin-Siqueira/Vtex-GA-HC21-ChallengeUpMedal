@@ -71,9 +71,9 @@
     "children": [
       "flex-layout.col#logo-desktop",
       /* "flex-layout.col#spacer", */
-      "flex-layout.col#before",
+      // "flex-layout.col#before",
       "search-bar",
-      "flex-layout.col#after",
+      // "flex-layout.col#after",
       // "locale-switcher",
       // "login",
       "minicart.v2"
@@ -86,7 +86,10 @@
   },
   "search-bar": {
     "props": {
-      "placeholder": "BUSCAR"
+      "placeholder": "Buscar",
+      "width": "grow",
+      "border-style": "none",
+      "color": "#14FF01"
     }
   },
   "flex-layout.col#after": {
@@ -104,8 +107,8 @@
       "fullWidth": true
     },
     "children":[
-      "flex-layout.col#category-menu",
-      "flex-layout.col#category-menu",
+      // "flex-layout.col#category-menu",
+      // "flex-layout.col#category-menu",
       "menu-item#category-apparel-eyeglasses",
       "menu-item#category-apparel-accessories",
       "menu-item#category-apparel-clothing"

@@ -40,8 +40,24 @@
     "children": [
       "menu-item#category-apparel-clothing",
       "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-apparel-eyeglasses",
+      "menu-item#category-kit-upmedal-palmeiras"
     ]
+  },
+  "menu-item#category-kit-upmedal-palmeiras": {
+    "props": {
+      "id": "menu-item-category-kit-upmedal-palmeiras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing palmeiras"
+      }
+    }
   },
   "menu-item#category-apparel-clothing": {
     "props": {
